@@ -5,3 +5,9 @@
 <br>
 <p><a href="../../">Back to Home</a></p>
 <p><a href="../">Back to All Customers</a></p>
+
+
+<form action="/stock/new" method="POST" >
+  <input type="hidden" value="<%= customer.id %>" name="owner">
+  <input type="submit" value="Add Stock" />
+</form>
